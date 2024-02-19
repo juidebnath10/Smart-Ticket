@@ -1,13 +1,13 @@
-let seatCount = 0,
+let countSeat = 0,
     totalPrice = 0;
 
-const seats = document.querySelectorAll("#bookingBtn");
+const seats = document.querySelectorAll("#selectBtn");
 
 seats.forEach((seat) => {
     seat.addEventListener("click", (e) => {
-        if (seatCount < 4) {
+        if (countSeat < 4) {
             // The Calculation
-            seatCount += 1;
+            countSeat += 1;
             totalPrice += 550;
 
             //Dynamic Style
@@ -27,16 +27,17 @@ seats.forEach((seat) => {
             createdLI("selectedSeat", 550, "right");
 
             // Changing The Value
-            alterInnerText("seatCount", seatCount);
-            alterInnerText("seatsLeft", 40 - seatCount);
+            alterInnerText("countSeat", countSeat);
+            alterInnerText("seatsLeft", 40 - countSeat);
             alterInnerText("totalPrice", totalPrice);
             alterInnerText("grandTotal", totalPrice);
 
             //Enabling The Button
-            if (seatCount === 4) removeDisabled("couponSubmit");
-        } else {
+            if (countSeat === 4) removeDisabled("couponSubmit");
+        }
+        else {
             alert(
-                "We apologize for the inconvenience. Our system currently only supports up to four bookings at once."
+                ""
             );
         }
     });
@@ -44,7 +45,7 @@ seats.forEach((seat) => {
 
 // Next button check
 getId("passengerNumb").addEventListener("keyup", (e) => {
-    if (e.target.value !== "" && seatCount > 0) {
+    if (e.target.value !== "" && countSeat > 0) {
         removeDisabled("nextBtn");
     } else {
         addDisabled("nextBtn");
@@ -67,7 +68,7 @@ getId("couponSubmit").addEventListener("click", (e) => {
         getId("removable").remove();
     } else {
         alert(
-            "To get a discount, please use the following two coupons: 'NEW15' and 'Couple 20'. Note that these are the only coupons that can be used for the discount."
+            ""
         );
     }
 });

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Smart-Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,8 +15,6 @@
                 extend: {
                     colors: {
                         'primary': '#1DD100',
-                        'secondary': '#131318',
-                        'third': '#13131880',
                     }
                 }
             }
@@ -165,13 +164,13 @@
                         </h4>
                     </div>
                     <div class="bg-[#F7F8F8] rounded-3xl p-8">
-                        <ul class="text-lg font-semibold border-b-2 border-dashed border-[#03071233] pb-3 md:pb-6 flex flex-col md:flex-row items-center justify-between">
+                        <ul class="text-lg font-semibold border-b-2  border-[#03071233] pb-3 md:pb-6 flex flex-col md:flex-row items-center justify-between">
                             <li class="text-[#03071299]">Route</li>
                             <li class="text-[#030712]">Dhaka - Sylhet</li>
                         </ul>
-                        <ul class="text-lg font-semibold border-b-2 border-dashed border-[#03071233] flex flex-col md:flex-row items-center justify-between py-3 md:py-6">
+                        <ul class="text-lg font-semibold border-b-2  border-[#03071233] flex flex-col md:flex-row items-center justify-between py-3 md:py-6">
                             <li class="text-[#03071299]">Departure Time</li>
-                            <li class="text-[#030712] inter">9:00 PM</li>
+                            <li class="text-[#030712]">9:00 PM</li>
                         </ul>
                         <ul class="text-[#030712CC] text-sm lg:text-base font-medium flex flex-col md:flex-row justify-between pt-3 md:pt-6 gap-3 text-center">
                             <li class="bg-[#0307120D] rounded-xl p-2 lg:p-4">
@@ -191,7 +190,7 @@
 
                 <ul class="flex flex-col justify-center items-center lg:col-span-2">
                     <li><img src="./images/fare.png" alt="" /></li>
-                    <li class="text-[#030712] text-xl lg:text-[32px] font-bold inter">
+                    <li class="text-[#030712] text-xl lg:text-[32px] font-bold">
                         550 Taka
                     </li>
                     <li class="text-[#03071299] text-lg lg:text-2xl font-semibold mt-2">
@@ -203,12 +202,12 @@
 
             <!-- Seat Select and Confirm Section  -->
             <div class="flex flex-col lg:flex-row gap-6 p-8 justify-between bg-white mt-7 rounded-3xl">
-                <div class="border-b-2 lg:border-b-0 pb-6 lg:pb-0 lg:pr-8 lg:border-r-2 border-dashed border-[#03071233] flex-1">
-                    <h2 class="text-2xl font-semibold text-[#030712] border-b-2 border-dashed border-[#03071233] pb-6">
+                <div class="border-b-2 lg:border-b-0 pb-6 lg:pb-0 lg:pr-8 lg:border-r-2  border-[#03071233] flex-1">
+                    <h2 class="text-2xl font-semibold text-[#030712] border-b-2  border-[#03071233] pb-6">
                         Select Your Seat
                     </h2>
                     <ul
-                        class="font-medium text-lg text-[#03071280] flex justify-between border-b-2 border-dashed border-[#03071233] py-5">
+                        class="font-medium text-lg text-[#03071280] flex justify-between border-b-2  border-[#03071233] py-5">
                         <li class="flex gap-2">
                             <img src="./images/seat-gray.png" alt="seat-gray"/>Available
                         </li>
@@ -221,35 +220,35 @@
                     </ul>
                     <!-- Seat Selection Section  -->
                     <div class="relative shadow-md rounded-lg mt-6">
-                        <table class="w-full text-sm text-left rtl:text-right">
+                        <table class="w-full text-sm text-left rtl:text-right roboto">
                             <tbody>
                                 <tr class="border-b grid grid-cols-1 sm:rounded-t-lg">
                                     <th scope="row" class="px-6 py-4 bg-[#0307121A] rounded-xl w-[110px] place-self-end mb-3 mr-3">
-                                        <img class="mx-auto" src="./images/tabler-icon-steering-wheel.png" alt="wheel" />
+                                        <img class="mx-auto" src="images/wheel.png" alt="" />
                                     </th>
                                 </tr>
                                 <!-- A  -->
                                 <tr class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center">
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             A1
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             A2
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             A3
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             A4
                                         </button>
@@ -258,52 +257,52 @@
                                 <!-- B  -->
                                 <tr class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center">
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             B1
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             B2
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             B3
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             B4
                                         </button>
                                     </td>
                                 </tr>
-                                <!-- C  -->
+                                <!-- C -->
                                 <tr class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center">
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             C1
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             C2
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             C3
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             C4
                                         </button>
@@ -312,27 +311,54 @@
                                 <!-- D  -->
                                 <tr class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center">
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             D1
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             D2
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             D3
                                         </button>
                                     </td>
                                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                                        <button id="bookingBtn" type="button"
+                                        <button id="selectBtn" type="button"
                                             class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
                                             D4
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- E -->
+                                <tr class="border-b grid grid-cols-2 md:grid-cols-9 items-center text-center">
+                                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                                        <button id="selectBtn" type="button"
+                                            class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
+                                            E1
+                                        </button>
+                                    </td>
+                                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                                        <button id="selectBtn" type="button"
+                                            class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
+                                            E2
+                                        </button>
+                                    </td>
+                                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                                        <button id="selectBtn" type="button"
+                                            class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
+                                            E3
+                                        </button>
+                                    </td>
+                                    <td class="px-3 py-4 col-span-1 md:col-span-2">
+                                        <button id="selectBtn" type="button"
+                                            class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none">
+                                            E4
                                         </button>
                                     </td>
                                 </tr>
@@ -341,17 +367,15 @@
                     </div>
                 </div>
                 <div class="lg:w-96">
-                    <h2 class="text-2xl font-semibold text-[#030712] border-b-2 border-dashed border-[#03071233] pb-6">
-                        Confirm Your Seat
+                    <h2 class="text-2xl font-semibold text-[#030712] border-b-2  border-[#03071233] pb-6">
+                        Select Your Seat
                     </h2>
-                    <!-- Confirm Selection Section  -->
+                    <!-- Confirm Section  -->
                     <div>
                         <div class="p-8 bg-[#F7F8F8] mt-6 rounded-xl">
                             <ul
-                                class="text-[#030712] text-base font-medium flex justify-between items-center border-b-2 border-dashed border-[#03071233] pb-4">
-                                <li>
-                                    Seat
-                                    <span id="seatCount" class="text-xs font-bold text-white bg-[#1DD100] rounded-2xl px-2">0</span>
+                                class="text-[#030712] text-base font-medium flex justify-between items-center border-b-2  border-[#03071233] pb-4 inter">
+                                <li> Seat<span id="countSeat" class="text-xs font-bold text-white bg-[#1DD100] rounded-2xl px-2">0</span>
                                 </li>
                                 <li>Class</li>
                                 <li>Price</li>
@@ -360,7 +384,7 @@
                                 class="text-[#03071299] text-base grid grid-cols-3 border-b-2 border-[#03071233] pb-4"></ul>
                             <ul id="theprice" class="text-[#030712] text-base font-medium grid grid-cols-2 py-4">
                                 <li>Total Price</li>
-                                <li class="place-self-end">
+                                <li class="place-self-end inter">
                                     BDT <span id="totalPrice">0</span>
                                 </li>
                             </ul>
@@ -368,7 +392,7 @@
                             <form id="removable">
                                 <div class="relative">
                                     <input type="text" id="couponInput"
-                                        class="block w-full p-2 md:p-4 ps-5 md:ps-10 text-sm md:text-lg text-amber-500 border border-gray-300 rounded-xl bg-gray-50 focus:ring-pink-400 focus:border-pink-400"
+                                        class="block w-full p-2 md:p-4 ps-5 md:ps-10 text-sm md:text-lg text-[##1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-pink-400 focus:border-pink-400"
                                         placeholder="Have any coupon?" />
                                     <button type="button" id="couponSubmit"
                                         class="text-white absolute end-2 md:end-2.5 bottom-1.5 md:bottom-2.5 bg-[#1DD100] hover:shadow-lg focus:outline-none font-semibold rounded-lg text-xs md:text-base px-2 md:px-4 py-1 md:py-2 cursor-not-allowed"
@@ -379,7 +403,7 @@
                             </form>
                             <ul class="text-[#030712] text-base font-medium grid grid-cols-2 pt-4">
                                 <li>Grand Total</li>
-                                <li class="place-self-end">
+                                <li class="place-self-end inter">
                                     BDT <span id="grandTotal">0</span>
                                 </li>
                             </ul>
@@ -391,7 +415,7 @@
                                 <input type="text"
                                     class="block w-full p-2 md:p-4 ps-5 md:ps-10 mb-4 md:mb-6 text-sm md:text-lg text-[#1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-green-500 focus:border-green-500"
                                     placeholder="Enter your name" />
-                                <label class="block mb-2 text-base font-semibold text-[#030712]">Phone Number*</label>
+                                <label class="block mb-2 text-base font-semibold text-[#030712]">Phone Number</label>
                                 <input type="number" id="passengerNumb"
                                     class="block w-full p-2 md:p-4 ps-5 md:ps-10 mb-4 md:mb-6 text-sm md:text-lg text-[#1DD100] border border-gray-300 rounded-xl bg-gray-50 focus:ring-green-500 focus:border-green-500"
                                     placeholder="Enter your phone number" required />
